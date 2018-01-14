@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<!-- 将A配置到配置文件中 -->
+	<bean name="A" class="com.spring.bean.A"  >
+		<!-- 将A的属性配置,spring会自动将配置的值注入到A中 -->
+		<property name="name" value="123" ></property>
+	</bean>
+
+	<bean name="B" class="com.spring.bean.B" scope="prototype" >
+		<!-- ref标识 要将Bean A注入 -->
+		<property name="a" ref="A" ></property>
+	</bean>
+	
+	
+	<bean name="C" class="com.spring.bean.C" scope="prototype"  >
+		<!-- ref标识 要将Bean B注入 -->
+		<property name="b" ref="B" ></property>
+	</bean>
+</beans>
