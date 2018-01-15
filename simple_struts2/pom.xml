@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.simple</groupId>
+  <artifactId>simple_struts2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+	<dependency>
+	    <groupId>commons-beanutils</groupId>
+	    <artifactId>commons-beanutils</artifactId>
+	    <version>1.8.3</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+	<dependency>
+	    <groupId>commons-logging</groupId>
+	    <artifactId>commons-logging</artifactId>
+	    <version>1.1.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+	<dependency>
+	    <groupId>dom4j</groupId>
+	    <artifactId>dom4j</artifactId>
+	    <version>1.6.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+	<dependency>
+	    <groupId>jaxen</groupId>
+	    <artifactId>jaxen</artifactId>
+	    <version>1.1-beta-6</version>
+	</dependency>
+	<!-- 单元测试 -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.10</version>
+		<scope>test</scope>
+	</dependency>
+	
+	<!-- JSP相关 -->
+	<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<version>2.5</version>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jsp-api</artifactId>
+		<version>2.0</version>
+	</dependency>
+	
+  </dependencies>
+  
+  <build>
+	<finalName>${project.artifactId}</finalName>
+	<plugins>
+		<!-- java编译插件 -->
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.2</version>
+			<configuration>
+				<source>1.7</source>
+				<target>1.7</target>
+				<encoding>UTF-8</encoding>
+			</configuration>
+		</plugin>
+	</plugins>
+  </build>
+  
+</project>
