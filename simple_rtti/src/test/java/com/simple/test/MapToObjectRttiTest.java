@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.alibaba.fastjson.JSON;
 import com.simple.bean.User;
 import com.simple.rtti.MapToObjectRtti;
 
