@@ -1,1 +1,1 @@
-Spring+MyBatis+Redis构建的三级缓存
+Spring+MyBatis+Redis Three Level Cache ！
