@@ -12,6 +12,12 @@
 		<version>4.10</version>
 		<scope>test</scope>
 	</dependency>
+	<!-- fastJson -->
+	<dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>fastjson</artifactId>
+	    <version>1.2.7</version>
+	</dependency>
   </dependencies>
   
   <build>
